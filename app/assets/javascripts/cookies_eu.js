@@ -38,13 +38,13 @@ var cookiesEu = {
   }
 
   if (document.addEventListener) {
+    document.addEventListener('turbolinks:load', isReady, false);
     document.addEventListener('DOMContentLoaded', isReady, false);
   }
 
   // Old browsers IE < 9
   if (window.addEventListener) {
     window.addEventListener('load', isReady, false);
-    document.addEventListener('turbolinks:load', isReady, false);
   } else if (window.attachEvent) {
     window.attachEvent('onload', isReady);
   }
