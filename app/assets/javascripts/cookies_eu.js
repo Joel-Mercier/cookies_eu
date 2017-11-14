@@ -31,7 +31,6 @@ document.addEventListener('turbolinks:load', function () {
   var isCalled = false;
 
   function isReady() {
-    console.log('isReady')
     if (isCalled) return;
     isCalled = true;
 
